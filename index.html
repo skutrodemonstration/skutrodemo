@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="logan6145.github.io/style.css">
 <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"></script>
+<script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
 <body style="margin : 0px; overflow: hidden;">
   </head>  
   <body>
@@ -17,6 +18,7 @@
     <a-scene embedded arjs="trackingMethod: best; debugUIEnabled: false;">
       <a-gltf-model src="logan6145.github.io/mega_scene/SKUTRO FILE.glb"></a-gltf-model>
       <a-marker-camera preset="hiro"></a-marker-camera>
+<a-gltf-model id="model" src="#gltf" position='0 0.5 0'></a-gltf-model>
       <a-camera-static/>
     </a-scene>
 </body>
