@@ -1,0 +1,50 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center
+  
+}
+body.drag
+
+.message {
+  text-align: center;
+  margin: auto;
+}
+
+
+.instructions {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  font-size: 15px;
+  text-align: right;
+  margin: auto;
+}
+#download {
+ border: 0;
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+  position: fixed;
+  bottom: 30px;
+  padding: 30px;
+  margin: auto;
+  width: 200px;
+  margin-left: -100px;
+  left: 50%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+#download:hover {
+  background: rgba(230, 230, 230,0.8);
+}
+
