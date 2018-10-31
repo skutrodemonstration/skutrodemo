@@ -16,7 +16,8 @@
       </p>
     </div>
     <a-scene embedded arjs="trackingMethod: best; debugUIEnabled: false;">
-      <a-obj-model src="logan6145.github.io/mega_scene/bunny_norm.obj"></a-obj-model>
+	     <a-scene id="scene" embedded arjs>
+		<a-asset-item id="obj" src="models/monkey.obj"></a-asset-item>
       <a-marker-camera preset="hiro">
 <a-obj-model id="model" src="#obj" position='0 0.5 0'></a-obj-model>
 	      </a-marker-camera>
