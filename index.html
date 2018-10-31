@@ -9,7 +9,7 @@
         init:function() {
           var element = document.querySelector('body');
           this.marker = document.querySelector('a-marker-camera')
-          var model = document.querySelector('a-gltf-model');
+          var model = document.querySelector('a-collada-model');
           this.markerVisible = false
       var hammertime = new Hammer(element);
       var pinch = new Hammer.Pinch();
@@ -71,7 +71,7 @@
       </p>
     </div>
     <a-scene embedded arjs="trackingMethod: best; debugUIEnabled: false;">
-      <a-gltf-model src="logan6145.github.io/mega_scene/SKUTRO FILE.glb"></a-gltf-model>
+      <a-collada-model src="logan6145.github.io/mega_scene/SKUTRO FILE.glb"></a-collada-model>
       <a-marker-camera preset="hiro"></a-marker-camera>
       <a-camera-static/>
     </a-scene>
