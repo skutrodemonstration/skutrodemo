@@ -1,55 +1,14 @@
-<html>
-<script src="https://aframe.io/releases/0.8.1/aframe.min.js"></script>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"></script>
-<script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
-<body style="margin : 0px; overflow: hidden;">
-<link rel="stylesheet" href="logan6145.github.io/style.css">
-  <body>
-	   <a-scene embedded arjs="trackingMethod: best; debugUIEnabled: false;">
-    <button id="download">
-        Welcome to Skutro !
-      </button>
-    <div class="instructions">
-      <p>
-        Drag, Rotate and Pinch to play around.
-      </p>
-    </div>
-		<a-asset-item id="obj" src="models/monkey.obj"></a-asset-item>
-      <a-marker-camera preset="hiro">
-<a-obj-model id="model" src="#obj" position='0 0.5 0'></a-obj-model>
-	      </a-marker-camera>
-      <a-entity camera></a-entity>
-	  </a-scene>
-</body>
-<script>
-	const scene = document.getElementById('scene')
-	scene.addEventListener('touchmove', event => {movingTouch(event)})
-	const model = document.getElementById('model')
-	const manager = new Hammer.Manager(scene)
-	const pinch = new Hammer.Pinch()
-	manager.add(pinch)
-	manager.on('pinch', function(ev) {
-		if (!model) return
-		const curr = model.getAttribute('scale')
-		const scale = (ev.scale - 1)*0.01
-		model.setAttribute('scale', {
-			'x': curr.x + scale,
-			'y': curr.y + scale,
-			'z': curr.z + scale
-		})
-	})
-	const movingTouch = event => {
-		if (!model) return
-		const curr = model.getAttribute('rotation')
-		let touches = event.changedTouches
-		for (touch of touches) {
-			model.setAttribute('rotation', {
-				'x': curr.x - touch.pageY*0.01,
-				'y': curr.y + touch.pageX*0.01,
-				'z': curr.z
-			})
-		}
-	}
-</script>
-	  </html>
 
+<html>
+ <head>
+   <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+ </head>
+ <body>
+   <a-scene>
+     <a-assets>
+    <a-asset-item id="tree" src="/Users/bismitanayak/Documents/GitHub/sites/skrip.github.io/Ortuks\model/ortuks\.gltf"></a-asset-item>
+  </a-assets>
+<a-entity gltf-model="#tree"></a-entity>
+   </a-scene>
+ </body>
+</html>
