@@ -11,7 +11,7 @@
         init:function() {
           var element = document.querySelector('body');
           this.marker = document.querySelector('a-marker')
-          var model = document.querySelector('a-gltf-model');
+          var model = document.querySelector('a-collada-model');
           this.markerVisible = false
       var hammertime = new Hammer(element);
       var pinch = new Hammer.Pinch();
@@ -73,8 +73,8 @@
     </div>
  <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;" foo>
  <a-marker preset="hiro">	  
-  <a-gltf-model src="url(logan6145.github.io/mega_scene/SKUTRO ORIGINS with text.glb)" rotation="0 0 0" scale="1 1 1">
- </a-gltf-model>
+  <a-collada-model src="url(logan6145.github.io/COLLADASKTURO.dae)" rotation="0 0 0" scale="1 1 1">
+ </a-collada-model>
 </a-marker>
   <a-camera-static/>
 </a-scene>
