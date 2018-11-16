@@ -49,7 +49,7 @@ body.drag
 }
 
     .more {
-    position: fixed;
+    position: absolute;
     text-align: center;
     right: 0px;
     bottom: 30px;
