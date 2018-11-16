@@ -48,3 +48,10 @@ body.drag
   background: rgba(230, 230, 230,0.8);
 }
 
+    div.fixed {
+    position: absolute;
+    text-align: center;
+    right: 0px;
+    bottom: 50px;
+    width: 300px;
+}
