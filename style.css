@@ -49,7 +49,7 @@ body.drag
 }
 
     .fixed {
-    position: absolute;
+    position: fixed;
     text-align: center;
     right: 0px;
     bottom: 30px;
