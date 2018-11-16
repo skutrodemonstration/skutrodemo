@@ -48,8 +48,8 @@ body.drag
   background: rgba(230, 230, 230,0.8);
 }
 
-    .more {
-    position: absolute;
+    .fixed {
+    position: fixed;
     text-align: center;
     right: 0px;
     bottom: 30px;
